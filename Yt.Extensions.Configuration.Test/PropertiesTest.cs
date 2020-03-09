@@ -9,6 +9,7 @@ namespace Yt.Extensions.Configuration.Test
     [TestFixture()]
     public class PropertiesTest
     {
+        //nuget api key:oy2imukyqemoulk5rygat7dl3qwm4zxe7gctv66ij4qa7q
         [Test()]
         public void TestProperties()
         {
