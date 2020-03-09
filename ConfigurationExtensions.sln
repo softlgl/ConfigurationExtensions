@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yt.Extensions.Configuration", "Yt.Extensions.Configuration\Yt.Extensions.Configuration.csproj", "{8610AB60-CB1D-4172-9912-D5A2C3EF442A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yt.Extensions.Configuration.Test", "Yt.Extensions.Configuration.Test\Yt.Extensions.Configuration.Test.csproj", "{42F14F6C-63E9-4CC5-80AC-CB06F3071EF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8610AB60-CB1D-4172-9912-D5A2C3EF442A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8610AB60-CB1D-4172-9912-D5A2C3EF442A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8610AB60-CB1D-4172-9912-D5A2C3EF442A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8610AB60-CB1D-4172-9912-D5A2C3EF442A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F14F6C-63E9-4CC5-80AC-CB06F3071EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F14F6C-63E9-4CC5-80AC-CB06F3071EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F14F6C-63E9-4CC5-80AC-CB06F3071EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F14F6C-63E9-4CC5-80AC-CB06F3071EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
