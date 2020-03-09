@@ -22,5 +22,20 @@ namespace Yt.Extensions.Configuration.Test
                 Debug.WriteLine($"Key:{item.Key}----Value:{item.Value}");
             }
         }
+
+        [Test()]
+        public void TestAll()
+        {
+            IConfigurationBuilder builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddPropertiesFile("myproperties.properties")
+                .AddYamlFile("myyaml.yml");
+
+            IConfiguration config = builder.Build();
+            foreach (var item in config.AsEnumerable())
+            {
+                Debug.WriteLine($"Key:{item.Key}----Value:{item.Value}");
+            }
+        }
     }
 }
