@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
+using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
 
 namespace Yt.Extensions.Configuration.Test
@@ -9,6 +12,15 @@ namespace Yt.Extensions.Configuration.Test
         [Test()]
         public void TestYaml()
         {
+            IConfigurationBuilder builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddYamlFile("myyaml.yml",true);
+
+            IConfiguration config = builder.Build();
+            foreach (var item in config.AsEnumerable())
+            {
+                Debug.WriteLine($"Key:{item.Key}----Value:{item.Value}");
+            }
         }
     }
 }

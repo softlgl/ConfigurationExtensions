@@ -13,9 +13,9 @@ namespace Yt.Extensions.Configuration
             return builder.AddPropertiesFile(path, false);
         }
 
-        public static IConfigurationBuilder AddPropertiesFile(this IConfigurationBuilder builder, string path, bool reloadOnChange)
+        public static IConfigurationBuilder AddPropertiesFile(this IConfigurationBuilder builder, string path, bool optional)
         {
-            return builder.AddPropertiesFile(path, reloadOnChange, false);
+            return builder.AddPropertiesFile(path, optional, false);
         }
 
         public static IConfigurationBuilder AddPropertiesFile(this IConfigurationBuilder builder, string path, bool optional, bool reloadOnChange)

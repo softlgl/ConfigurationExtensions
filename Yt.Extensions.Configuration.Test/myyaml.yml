@@ -1,0 +1,19 @@
+﻿---
+# OrderId
+OrderId: 12345
+# Info
+Info:
+  MoneyAll: 156.44
+  Address:
+    Province: 山东省
+    City: 济南市
+    Home: 历下区
+# GrantTypes
+Product:
+   - PId:1
+     Name:芹菜
+     Money:12
+   - PId:2
+     Name:橄榄
+     Money:25
+    

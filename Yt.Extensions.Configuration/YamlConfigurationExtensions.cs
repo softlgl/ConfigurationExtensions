@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 using Yt.Extensions.Configuration.PropertiesConfiguration;
+using Yt.Extensions.Configuration.YamlConfiguration;
 
 namespace Yt.Extensions.Configuration
 {
@@ -12,9 +13,9 @@ namespace Yt.Extensions.Configuration
             return builder.AddYamlFile(path, false);
         }
 
-        public static IConfigurationBuilder AddYamlFile(this IConfigurationBuilder builder, string path, bool reloadOnChange)
+        public static IConfigurationBuilder AddYamlFile(this IConfigurationBuilder builder, string path, bool optional)
         {
-            return builder.AddYamlFile(path, reloadOnChange, false);
+            return builder.AddYamlFile(path, optional, false);
         }
 
         public static IConfigurationBuilder AddYamlFile(this IConfigurationBuilder builder, string path, bool optional, bool reloadOnChange)
@@ -42,7 +43,7 @@ namespace Yt.Extensions.Configuration
             });
         }
 
-        public static IConfigurationBuilder AddYamlFile(this IConfigurationBuilder builder, Action<PropertiesConfigurationSource> configureSource)
+        public static IConfigurationBuilder AddYamlFile(this IConfigurationBuilder builder, Action<YamlConfigurationSource> configureSource)
         {
             return builder.Add(configureSource);
         }
