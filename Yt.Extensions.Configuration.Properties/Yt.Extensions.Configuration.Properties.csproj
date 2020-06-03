@@ -11,10 +11,13 @@
 
   <ItemGroup>
     <Compile Remove="Class1.cs" />
+    <Compile Remove="YamlConfiguration\YamlConfigurationProvider.cs" />
+    <Compile Remove="YamlConfiguration\YamlConfigurationFileParser.cs" />
+    <Compile Remove="PropertiesConfiguration\PropertiesConfigurationSource.cs" />
+    <Compile Remove="PropertiesConfiguration\PropertiesConfigurationProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
-    <PackageReference Include="YamlDotNet" Version="8.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.4" />
   </ItemGroup>
 </Project>

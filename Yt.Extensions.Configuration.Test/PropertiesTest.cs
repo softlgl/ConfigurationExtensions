@@ -3,6 +3,7 @@ using NUnit.Framework;
 using System;
 using System.Diagnostics;
 using System.IO;
+using Yt.Extensions.Configuration.Properties;
 
 namespace Yt.Extensions.Configuration.Test
 {

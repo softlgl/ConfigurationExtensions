@@ -2,7 +2,7 @@
 using System.IO;
 using Microsoft.Extensions.Configuration;
 
-namespace Yt.Extensions.Configuration.YamlConfiguration
+namespace Yt.Extensions.Configuration.Yaml
 {
     public class YamlConfigurationProvider: FileConfigurationProvider
     {

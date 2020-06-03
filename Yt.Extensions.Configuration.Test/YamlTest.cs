@@ -3,6 +3,9 @@ using System.Diagnostics;
 using System.IO;
 using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
+using Yt.Extensions.Configuration.Yaml;
+using Yt.Extensions.Configuration.Properties;
+
 
 namespace Yt.Extensions.Configuration.Test
 {

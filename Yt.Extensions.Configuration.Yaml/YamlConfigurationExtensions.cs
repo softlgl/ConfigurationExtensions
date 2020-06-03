@@ -1,10 +1,8 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
-using Yt.Extensions.Configuration.PropertiesConfiguration;
-using Yt.Extensions.Configuration.YamlConfiguration;
 
-namespace Yt.Extensions.Configuration
+namespace Yt.Extensions.Configuration.Yaml
 {
     public static class YamlConfigurationExtensions
     {

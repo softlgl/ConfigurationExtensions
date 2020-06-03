@@ -2,9 +2,8 @@
 using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
-using Yt.Extensions.Configuration.PropertiesConfiguration;
 
-namespace Yt.Extensions.Configuration
+namespace Yt.Extensions.Configuration.Properties
 {
     public static class PropertiesConfigurationExtensions
     {
