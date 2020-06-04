@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>softlgl</Authors>
-    <Description>IConfigurationBuilder扩展Properties，Yaml文件操作</Description>
+    <Description>Configuration扩展Properties文件</Description>
     <Copyright>softlgl</Copyright>
     <Owners>softlgl</Owners>
-    <PackageProjectUrl>https://github.com/softlgl/ConfigurationExtensions</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/softlgl/ConfigurationExtensions/tree/master/Yt.Extensions.Configuration.Properties</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

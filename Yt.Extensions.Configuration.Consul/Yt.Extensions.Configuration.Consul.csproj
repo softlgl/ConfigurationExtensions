@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>softlgl</Authors>
+    <Copyright>softlgl</Copyright>
+    <Owners>softlgl</Owners>
+    <PackageProjectUrl>https://github.com/softlgl/ConfigurationExtensions/tree/master/Yt.Extensions.Configuration.Consul</PackageProjectUrl>
+    <Description>Configuration扩展Consul配置中心数据源</Description>
   </PropertyGroup>
 
   <ItemGroup>
