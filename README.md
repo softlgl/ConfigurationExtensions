@@ -1,8 +1,8 @@
 # IConfigurationBuilder扩展
-扩展Properties，Yaml，Consul，Etcd等操作
+针对Configuration扩展Properties，Yaml本地文件数据源，还支持Consul，Etcd远程配置中心数据源
 
 使用方式
-```
+```cs
 IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("mysettings.json")
