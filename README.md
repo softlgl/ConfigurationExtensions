@@ -53,10 +53,12 @@ dotnet add package Yt.Extensions.Configuration.Etcd --version 1.0.0
 ```cs
 IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("mysettings.json")
+    //同json使用方式一致
     .AddPropertiesFile("myproperties.properties")
     .AddYamlFile("myyaml.yml")
+    //etcd地址 读取目录 变更是否刷新
     .AddEtcd("http://127.0.0.1:2379", "service/mydemo", true)
+    //consul地址 读取目录 变更是否刷新 刷新时间间隔
     .AddConsul("http://localhost:8500/","mydemo/test-dev",true,10*1000);
 IConfiguration config = configurationBuilder.Build();
 foreach (var item in config.AsEnumerable())
