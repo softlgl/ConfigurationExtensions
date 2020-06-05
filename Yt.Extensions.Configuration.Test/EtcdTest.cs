@@ -35,7 +35,7 @@ namespace Yt.Extensions.Configuration.Test
                 }
             }, null);
             Thread.Sleep(2000);
-            etcdHelper.PutAsync("service/mydemo", "{\"Id\": 24,   \"Name\": \"KOBE\",   \"Address\": {     \"Country\": \"USA\",     \"City\": \"LOS\"   },   \"consul\": {     \"ServiceName\": \"MyDemo\",     \"ConsulAddress\": \"http://localhost:8500/\",     \"ServiceHealthCheck\": \"http://localhost:5000/api/health\"   } }").GetAwaiter().GetResult();
+            etcdHelper.PutAsync("service/mydemo", "{\"Id\": 8,   \"Name\": \"KOBE\",   \"Address\": {     \"Country\": \"USA\",     \"City\": \"LOS\"   },   \"consul\": {     \"ServiceName\": \"MyDemo\",     \"ConsulAddress\": \"http://localhost:8500/\",     \"ServiceHealthCheck\": \"http://localhost:5000/api/health\"   } }").GetAwaiter().GetResult();
         }
     }
 }

@@ -35,6 +35,10 @@ namespace Yt.Extensions.Configuration.Etcd
         private void LoadData()
         {
             string result = _etcdClient.GetValAsync(_path).GetAwaiter().GetResult();
+            if (string.IsNullOrEmpty(result))
+            {
+                return;
+            }
             Data = ConvertData(result);
         }
 

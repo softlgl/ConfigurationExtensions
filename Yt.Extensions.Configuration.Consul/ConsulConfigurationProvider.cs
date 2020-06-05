@@ -46,6 +46,12 @@ namespace Yt.Extensions.Configuration.Consul
         private void LoadData(QueryResult<KVPair> queryResult)
         {
             _currentIndex = queryResult.LastIndex;
+            if (queryResult.Response == null
+                || queryResult.Response.Value==null
+                || !queryResult.Response.Value.Any())
+            {
+                return;
+            }
             Stream stream = new MemoryStream(queryResult.Response.Value);
             Data = JsonConfigurationFileParser.Parse(stream);
         }
@@ -54,7 +60,7 @@ namespace Yt.Extensions.Configuration.Consul
         private async Task<QueryResult<KVPair>> GetData()
         {
             var res = await _consulClient.KV.Get(_path);
-            if (res.StatusCode == HttpStatusCode.OK)
+            if (res.StatusCode == HttpStatusCode.OK || res.StatusCode == HttpStatusCode.NotFound)
             {
                 return res;
             }
